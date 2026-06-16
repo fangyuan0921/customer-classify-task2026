@@ -6,11 +6,12 @@
 
 import json
 from openai import OpenAI
+import os
 
 # API 配置
 client=OpenAI(
-	api_key="个人LLM平台API KEY",
-                base_url="模型服务商兼容模式接口地址"
+	api_key=os.getenv("LLM_API_KEY"),
+                base_url=os.getenv("LLM_BASE_URL")
 )
 MODEL = "qwen-plus"
 def classify_question(question: str) -> str:
