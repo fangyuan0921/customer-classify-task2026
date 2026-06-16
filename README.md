@@ -1,4 +1,4 @@
-# customer-classify-task2026
+customer-classify-task2026
 客服文本分类测试项目
 一、原始代码Code Review问题（按严重程度排序）
 问题1：原始代码中将LLM接口密钥直接写死在代码内，上传代码仓库会造成凭证泄露，产生额外扣费风险。
